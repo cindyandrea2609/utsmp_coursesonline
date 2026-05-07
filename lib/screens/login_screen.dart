@@ -147,7 +147,7 @@ class _LoginScreenState extends State<LoginScreen> {
     );
   }
 
-  // Helper untuk styling input yang clean
+  // Helper untuk styling input
   InputDecoration _buildInputDecoration(String label, IconData icon) {
     return InputDecoration(
       labelText: label,

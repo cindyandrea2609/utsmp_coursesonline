@@ -160,7 +160,7 @@ class DashboardScreen extends StatelessWidget {
                       child: const Icon(Icons.brush_outlined, color: Colors.white),
                     ),
                     title: Text("Design Course ${index + 1}", style: const TextStyle(color: Colors.white, fontWeight: FontWeight.w600)),
-                    subtitle: const Text("Advanced Level • 12 Lessons", style: TextStyle(color: Colors.white38, fontSize: 11)),
+                    subtitle: const Text("Advanced Level • 24 Lessons", style: TextStyle(color: Colors.white38, fontSize: 11)),
                     trailing: const Icon(Icons.arrow_forward_ios, color: Colors.white24, size: 14),
                   ),
                 );
