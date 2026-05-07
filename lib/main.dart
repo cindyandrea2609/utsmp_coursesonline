@@ -2,8 +2,9 @@ import 'package:flutter/material.dart';
 import 'screens/login_screen.dart';
 import 'screens/forgot_password_screen.dart';
 import 'screens/dashboard_screen.dart';
-import 'screens/kelas_screen.dart'; 
-import 'screens/profile_screen.dart'; 
+import 'screens/kelas_screen.dart';
+import 'screens/profile_screen.dart';
+import 'utils/theme_color.dart';
 
 void main() => runApp(const MyApp());
 
@@ -13,16 +14,20 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      title: 'Pixel Academy',
       debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        brightness: Brightness.dark,
+        scaffoldBackgroundColor: AppColors.background,
+      ),
       initialRoute: '/',
       routes: {
         '/': (context) => const LoginScreen(),
         '/forgot-password': (context) => const ForgotPasswordScreen(),
         '/dashboard': (context) => const DashboardScreen(),
-        '/kelas': (context) => const KelasScreen(), 
-        '/profile': (context) => const ProfileScreen(), 
+        '/kelas': (context) => const KelasScreen(),
+        '/profile': (context) => const ProfileScreen(),
       },
     );
   }
 }
-
